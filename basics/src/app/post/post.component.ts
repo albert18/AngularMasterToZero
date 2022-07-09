@@ -1,5 +1,5 @@
 import { Component, Input, Output, EventEmitter, OnInit, OnChanges, DoCheck,
-AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked
+AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy
 } from '@angular/core';
 
 @Component({
@@ -8,7 +8,7 @@ AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked
   styleUrls: ['./post.component.css']
 })
 export class PostComponent implements OnInit, OnChanges, DoCheck,
-AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked {
+AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy {
   // @Input() postImageUrl = ''
   @Input('img') postImageUrl = ''
 
@@ -45,6 +45,10 @@ AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked {
   }
 
   ngAfterViewChecked() {
+
+  }
+
+  ngOnDestroy() {
 
   }
 }
