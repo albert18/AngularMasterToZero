@@ -17,4 +17,7 @@ export class AppComponent {
     this.imageUrl = (e.target as HTMLInputElement).value
   }
 
+  logImg(event: string) {
+    console.log(event)
+  }
 }
