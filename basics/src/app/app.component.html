@@ -6,11 +6,14 @@
 
 <p> {{ 12 + 15  }}</p>
 
-
-
 <!-- <img [src]="imageUrl" alt=""> -->
-<app-post [img]="imageUrl" (imgSelected)="logImg($event)"></app-post>
+<app-post [img]="imageUrl" (imgSelected)="logImg($event)">
+  <p>Some Caption</p>
+</app-post>
 <!-- <app-post [postImageUrl]="imageUrl"></app-post> -->
+
+
+
 
 
 
