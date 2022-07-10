@@ -16,6 +16,7 @@ export class AppComponent {
     size: "Large"
   }
   blueClass = false
+  fontSize = 16
 
 
 
