@@ -8,6 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   name = 'albert guerrero!';
   imageUrl = 'https://media.newyorker.com/photos/59095bb86552fa0be682d9d0/master/pass/Monkey-Selfie.jpg'
+  images = [
+    'https://media.newyorker.com/photos/59095bb86552fa0be682d9d0/master/pass/Monkey-Selfie.jpg',
+    'https://media.newyorker.com/photos/59095bb86552fa0be682d9d0/master/pass/Monkey-Selfie.jpg',
+    'https://media.newyorker.com/photos/59095bb86552fa0be682d9d0/master/pass/Monkey-Selfie.jpg'
+  ]
   currentDate = new Date()
   cost = 2000
   temperature = 25.3

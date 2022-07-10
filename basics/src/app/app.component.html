@@ -1,7 +1,8 @@
 
 
+
+<!-- ngIf -->
 <p *ngIf="blueClass">Button is blue</p>
-<!-- OR -->
 <!-- <ng-template [ngIf]="blueClass">
   <p>Button is blue.</p>
 </ng-template> -->
@@ -34,9 +35,14 @@
 <p> {{ 12 + 15  }}</p>
 
 <!-- <img [src]="imageUrl" alt=""> -->
-<app-post [img]="imageUrl" (imgSelected)="logImg($event)">
-  <p>Some Caption</p>
+
+<app-post *ngFor="let image of images; let i = index" [img]="image" (imgSelected)="logImg($event)">
+  <p>{{ i }} Some Caption</p>
 </app-post>
+
+<!-- <app-post [img]="imageUrl" (imgSelected)="logImg($event)">
+  <p>Some Caption</p>
+</app-post> -->
 <!-- <app-post [postImageUrl]="imageUrl"></app-post> -->
 
 
