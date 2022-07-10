@@ -1,3 +1,12 @@
 input {
   display: block;
 }
+
+hr {
+  margin: 150px 0;
+}
+
+.blue {
+  background-color: blue;
+  color:white;
+}
